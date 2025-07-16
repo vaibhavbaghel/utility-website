@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="website.png">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: rgb(10, 63, 116);
+        }
+
+        nav {
+            height: 80px;
+            background-color: rgb(0, 154, 168);
+            color: rgb(6, 10, 46);
+            text-align: center;
+            padding: 10px;
+        }
+        nav h1 {
+            font-size: 35px;
+            color: rgb(54, 45, 124);
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .boxes {
+            height: 300px;
+            width: 250px;
+            background-color: rgb(10, 63, 116);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .boxes a {
+            text-decoration: none;
+        }
+
+        .img {
+            height: 220px;
+            width: 250px;
+            background-color: rgb(10, 63, 116);
+            overflow: hidden;
+        }
+
+        .img img {
+            height: 220px;
+        }
+
+        .text {
+            color: rgb(0, 183, 255);
+            font-size: 25px;
+            margin-top: 20px;
+            padding-left: 40px;
+        }
+
+        footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            color: rgb(169, 175, 244);
+        }
+
+        @media (max-width : 750px) {
+            .main {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1>Utility</h1>
+        <h2>An app for basic needs</h2>
+    </nav>
+
+    <div class="main">
+        <div class="boxes">
+            <a href="Calculator/calc.html">
+                <div class="img"><img src="calcimg.png" alt=""></div>
+                <div class="text"><strong>Calculator</strong></div>
+            </a>
+        </div>
+        <div class="boxes">
+            <a href="To-do app/todo.html">
+                <div class="img"><img src="todoimg.png" alt=""></div>
+                <div class="text"><strong>To-Do List</strong></div>
+            </a>
+        </div>
+        <div class="boxes">
+            <a href="Tic-Tac-Toe/ttt.html">
+                <div class="img"><img src="tttimg.png" alt=""></div>
+                <div class="text"><strong>Tic-Tac-Toe</strong></div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Vaibhav Baghel</p>
+    </footer>
+    
+</body>
+</html>
